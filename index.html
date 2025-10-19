@@ -7,35 +7,85 @@
     <title>صفحه اصلی چای گلستان</title>
     <link rel="icon" href="./photo/logo-fr.png" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/tailwind.css" />
     <link rel="stylesheet" href="./animate.css/animate.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="asli">
-      <nav>
-        <img src="./photo/logo-fr.png" alt="" />
-        <ul>
-          <li><a href="#" class="color">صفحه اصلی</a></li>
-          <li><a href="#">شرکت گلستان</a></li>
-          <li><a href="#">محصولات</a></li>
-          <li><a href="#">وبلاگ</a></li>
-          <li><a href="#">قرعه کشی</a></li>
-          <li><a href="#">استخدام</a></li>
-          <li><a href="#">تماس با ما</a></li>
-          <li class="notborder"><a href="#">EN</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-dark shadow-sm flex-col">
+        <div class="container max-[1025px]:!flex-col max-md:!flex-row">
+          <a href="#" class="navbar-brand">
+            <img
+              src="./photo/logo-fr.png"
+              alt=""
+              class="!static min-[1025px]:!absolute"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="منو"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse min-md:!inline" id="mainNavbar">
+            <ul
+              class="navbar-nav mb-2 mb-md-0 min-[1025px]:!pt-[35px] min-[1025px]:!pr-[250px] !mr-0"
+            >
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="color nav-link max-md:!text-[25px]"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">شرکت گلستان</a>
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">محصولات</a>
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">وبلاگ</a>
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">قرعه کشی</a>
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">استخدام</a>
+              </li>
+              <li class="nav-item max-md:!border-none">
+                <a href="#" class="nav-link max-md:!text-[20px]">تماس با ما</a>
+              </li>
+              <li class="notborder nav-item max-md:!border-none !border-l-0">
+                <a href="#" class="nav-link max-md:!text-[20px]">EN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
     <div class="item">
-      <div class="box">
+      <div
+        class="box max-md:!flex-col max-md:!items-center max-md:!justify-center"
+      >
         <img
           src="./photo/tea-pic1 (1).png"
           alt=""
-          class="animate__animated animate__fadeInDown"
+          class="animate__animated animate__fadeInDown max-md:!mr-16 max-md:!order-2"
         />
-        <div>
+        <div class="max-lg:!m-0 !pr-11">
           <h2 class="a">قرعه‌کشی مصرف‌کنندگان گلستان</h2>
           <h2 class="b">قرعه‌کشی دوره‌ای مصرف‌کنندگان چای گلستان</h2>
-          <h2 class="c animate__animated animate__fadeInDown">
+          <h2
+            class="c animate__animated animate__fadeInDown !ml-0 min-lg:!w-[500px]"
+          >
             هر یک از مصرف‌کنندگان محصولات چای و چای کیسه‌ای گلستان می‌توانند با
             ارسال کد قرعه‌کشی روی بسته به شماره 30007405 در قرعه کشی‌های دوره‌ای
             گلستان شرکت کنند. نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی
@@ -46,8 +96,10 @@
       </div>
     </div>
     <hr />
-    <div class="box1 animate__animated animate__fadeInRight">
-      <div class="koli">
+    <div
+      class="box1 animate__animated animate__fadeInRight max-md:!block max-md:!w-full"
+    >
+      <div class="koli max-md:!block max-md:!w-full">
         <h2 class="a">معرفی گلستان</h2>
         <h2 class="b">
           آنچه که امروز با نام مجموعه <span>گلستان </span> می‌شناسیم در سال 1329
@@ -74,8 +126,10 @@
         </p>
       </div>
     </div>
-    <div class="box2 animate__animated animate__zoomIn animate__delay-3s">
-      <div>
+    <div
+      class="box2 animate__animated animate__zoomIn animate__delay-3s max-lg:!flex-wrap"
+    >
+      <div class="max-lg:!flex-wrap">
         <div>
           <img src="./photo/1.png" alt="" />
           <p>مشتریان گلستان</p>
@@ -96,16 +150,16 @@
     </div>
     <hr />
     <div class="box3">
-      <img src="./photo/image2-new-1.jpg" alt="" />
-      <div></div>
-      <div class="item">
-        <div class="a">برنج گلستان</div>
+      <img src="./photo/image2-new-1.jpg" alt="" class="max-md:!h-[241px]" />
+      <div class="max-md:!hidden"></div>
+      <div class="item max-md:!w-[100%] max-md:!static max-md:!mt-0">
+        <div class="a !w-full">برنج گلستان</div>
         <div class="b">معرفی محصول</div>
       </div>
     </div>
     <hr class="box3" />
-    <div class="box4">
-      <div>
+    <div class="box4 max-md:!block max-md:!w-full">
+      <div class="max-md:!block max-md:!w-full">
         <h2>رکن اول غذای ایرانی</h2>
         <p>
           مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و
@@ -120,16 +174,16 @@
       </div>
     </div>
     <div class="box5">
-      <img src="./photo/image3-new.jpg" alt="" />
-      <div></div>
-      <div class="item">
-        <div class="a">چای گلستان</div>
+      <img src="./photo/image3-new.jpg" alt="" class="max-md:!h-[241px]" />
+      <div class="max-md:!hidden"></div>
+      <div class="item max-md:!w-[100%] max-md:!static max-md:!mt-0">
+        <div class="a !w-full">چای گلستان</div>
         <div class="b">معرفی محصول</div>
       </div>
     </div>
     <hr class="box3" />
-    <div class="box6">
-      <div>
+    <div class="box6 max-md:!block max-md:!w-full">
+      <div class="max-md:!block max-md:!w-full">
         <h2>سابقه‌ای به قدمت یک عمر</h2>
         <p>
           چای تنها یك نوشیدنی گرم نیست.‌ یک گفتمان است؛‌ گرمابخش وجود و بهانه‌ای
@@ -148,16 +202,16 @@
       </div>
     </div>
     <div class="box7">
-      <img src="./photo/image4-new.jpg" alt="" />
-      <div></div>
-      <div class="item">
-        <div class="a">پسته گلستان</div>
+      <img src="./photo/image4-new.jpg" alt="" class="max-md:!h-[241px]" />
+      <div class="max-md:!hidden"></div>
+      <div class="item max-md:!w-[100%] max-md:!static max-md:!mt-0">
+        <div class="a !w-full">پسته گلستان</div>
         <div class="b">معرفی محصول</div>
       </div>
     </div>
     <hr class="box3" />
-    <div class="box8">
-      <div>
+    <div class="box8 max-md:!block max-md:!w-full">
+      <div class="max-md:!block max-md:!w-full">
         <h2>آجيل‌های خوش خنده</h2>
         <p>
           خواص فوق‌العاده پسته بر كسی پوشیده نیست. پسته را منبع ویتامین و مواد
@@ -180,8 +234,10 @@
       <div><span>مجله گلستان</span></div>
     </div>
     <div class="box11">
-      <div class="itemkol">
-        <div class="item_1">
+      <div
+        class="itemkol max-lg:!justify-center max-lg:!flex-wrap max-lg:!w-full max-md:!justify-start max-md:!items-center"
+      >
+        <div class="item_1 max-lg:!hidden">
           <div>
             <a href="#"> <img src="./photo/recipe-pic2.jpg" alt="" /></a>
             <div>
@@ -195,7 +251,7 @@
             </div>
           </div>
         </div>
-        <div class="item_1">
+        <div class="item_1 max-md:!mx-auto max-md:!w-[365px]">
           <div>
             <a href="#">
               <img src="./photo/recipe-pic3.jpg" alt="" />
@@ -211,7 +267,7 @@
             </div>
           </div>
         </div>
-        <div class="item_1">
+        <div class="item_1 max-md:!mx-auto max-md:!w-[365px] max-md:!mt-0">
           <div>
             <a href="#">
               <img src="./photo/recipe-pic-Chilakile-1401.jpg" alt="" />
@@ -230,8 +286,10 @@
       </div>
     </div>
     <div class="box12">
-      <div>
-        <div>
+      <div
+        class="max-lg:!justify-center max-lg:!flex-wrap max-lg:!w-full max-md:!justify-start max-md:!items-center gap-4"
+      >
+        <div class="max-lg:!hidden">
           <video
             src="./video/5af0d143bb02d3da97b478c3452087725839414-360p.mp4"
             controls
@@ -246,7 +304,7 @@
           </h2>
           <a href="#" class="a2"><span>ویدیوهای بیشتر</span></a>
         </div>
-        <div>
+        <div class="max-md:!mx-auto max-md:!w-[365px]">
           <video
             src="./video/08e5de20749d04ceee09732d550724dd5839467-720p.mp4"
             controls
@@ -261,7 +319,7 @@
           </h2>
           <a href="#" class="a2"><span>ادامه مطلب</span></a>
         </div>
-        <div>
+        <div class="max-md:!mx-auto max-md:!w-[365px]">
           <video
             src="./video/b3de04d37ace2ed2d5008f7f359c50d51660793.mp4"
             controls
@@ -288,8 +346,8 @@
     </div>
     <div class="box14"></div>
     <hr />
-    <div class="box15">
-      <div>
+    <div class="box15 max-md:!block max-md:!w-full">
+      <div class="max-md:!block max-md:!w-full">
         <h2>مسئوليت‌های اجتماعی گلستان</h2>
         <p>
           كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین،
@@ -315,7 +373,7 @@
     <div class="box17"></div>
 
     <footer>
-      <div class="box18">
+      <div class="box18 max-lg:!flex-wrap">
         <div>
           <div>
             <img src="./photo/footer-icon1.png" alt="" />
@@ -379,5 +437,6 @@
     <a href="#" class="sabet">
       <img src="./photo/svgexport-25.svg" alt="" />
     </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
